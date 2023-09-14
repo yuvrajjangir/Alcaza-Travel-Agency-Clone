@@ -1,3 +1,63 @@
+/* background image */
+.headers {
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: bottom;
+  color: #fff; /* Text color */
+
+  padding: 20px;
+}
+
+.text > .sub {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.text > .sub > h1 {
+  font-family: "Gill Sans", sans-serif;
+
+  font-weight: 400;
+  font-size: 102.4px;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.sub-heading {
+  margin-top: 40px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.sub-heading > h4 {
+  font-family: Arial Helvetica sans-serif;
+
+  font-size: 22.4px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+/* about section  */
 #hero {
   width: 70%;
   margin: auto;
@@ -135,7 +195,6 @@
 }
 .aboutbox > .aboutfirst {
   width: 40%;
-  /* border: 3px solid yellow; */
 }
 .aboutbox > .aboutfirst img {
   width: 100%;
@@ -143,7 +202,7 @@
 }
 .aboutSection > .aboutbox > .aboutSecond {
   width: 40%;
-  /* border: 3px solid purple; */
+
   padding: 20px;
 }
 .aboutSecond > h1 {
