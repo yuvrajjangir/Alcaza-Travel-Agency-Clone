@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Open+Sans:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Nunito";
+}
+
+body {
+  background-color: #ffffff;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#yes {
+  width: 98%;
+  margin: auto;
+  padding: 1%;
+}
+
+.checked {
+  color: orange;
+}
+
+#content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+
+  margin: auto;
+  /* border: 1px solid black; */
+  place-items: center;
+}
+#empty-content {
+  display: none;
+  width: 100%;
+  place-items: center;
+}
+.empty-wishlist {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.cr {
+  border: 1px solid rgb(218, 174, 174);
+  text-align: left;
+  border-radius: 15px;
+  padding-bottom: 3%;
+}
+.cr .card-image {
+}
+.card-image > img {
+  width: 25rem;
+  height: 16rem;
+
+  border-radius: 4% 4% 0 0;
+}
+.cr .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.cr .card-body * {
+  margin: 0;
+}
+.cr h3 {
+  font-size: 22px;
+  font-weight: bold;
+}
+.cr h4 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.cr p {
+  font-size: 16px;
+  color: rgb(87, 87, 87);
+  font-weight: bold;
+}
+.cr button {
+  background-color: rgb(7, 166, 214);
+  color: #fff;
+  border-color: rgb(7, 166, 214);
+  border-radius: 10px;
+  height: 3rem;
+  width: 7.5rem;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  background-color: rgb(14, 111, 229);
+  font-size: 15px;
+  font-weight: 700;
+}
+.cr button.cancel {
+  background-color: rgb(243, 38, 38);
+}
+.cr .body-hr {
+  width: 85%;
+  height: 0.5px;
+  margin: auto;
+  border: solid 1px rgb(81, 80, 80);
+}
+.btn-group {
+  background-color: 07A6D6;
+  color: white;
+}
+
+.bt-div {
+  width: 90%;
+  margin: auto;
+  margin-top: 1rem;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-outline-primary.custom-radio {
+  background-color: rgb(7, 166, 214);
+  color: #fff;
+  border-color: rgb(7, 166, 214);
+}
+
+.btn-outline-primary.custom-radio:checked {
+  background-color: rgb(7, 166, 214);
+  color: #fff;
+}
+
+.ratings {
+  text-align: left;
+  margin-left: 2%;
+  margin-bottom: 2%;
+}
+#explore {
+  position: relative;
+}
+#explore img {
+  display: block;
+  width: 70%;
+
+  height: 60vh;
+  margin: auto;
+  margin-top: 2rem;
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: rgba(0, 0, 0, 0.6); */
+  color: white;
+  padding: 20px;
+  text-align: left;
+}
+
+.get-started-button {
+  background-color: #030dbc;
+  color: white;
+  border: none;
+  height: 3rem;
+  width: 7.5rem;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 895px) {
+  #content {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+  }
+  #yes {
+    position: absolute;
+    top: 5rem;
+  }
+  #explore img {
+    display: block;
+    width: 100%;
+
+    height: 30vh;
+    margin: auto;
+    margin-top: 2rem;
+    border-radius: 10px;
+  }
+}
+
