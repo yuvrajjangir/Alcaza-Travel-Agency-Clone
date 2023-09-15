@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(233, 255, 255);
+}
+pre{
+    font-size: large;
+    font-weight: 300;
+    margin-left: 100px;
+}
+.im{
+    width: 400px;
+    height: 400px;
+margin: 10px;
+    
+}
+.second{
+margin-left: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,430px);
+}
+.imm{
+    width: 100%;
+}
+h3{
+    margin-left: 80px;
+}
+.abc{
+display: flex;
+}
+
+.img11{
+    width: 350px;
+    height: 350px;
+    margin-right: 10px;
+    margin: 20px;
+}

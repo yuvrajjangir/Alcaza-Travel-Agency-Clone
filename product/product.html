@@ -5,30 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product</title>
 </head>
-<style>
-    body{
-        text-align: center;
-    }
-    #btn{
-        margin-left: 10%;
-        margin-right: 10%;
-        display: flex;
-        justify-content: space-between;
-    }
-    #btn>a{
-        text-decoration: none;
-        
-    }
-    #content{
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-</style>
+<link rel="stylesheet" href="./product.css">
 <body>
     <h1>Guide for your next vacation</h1>
     <p>Check out this week's selection of popular that might catch your eye. and don't.</p>
     <br>
-    <div id="btn"><a href="">All</a><a href="">Trending</a><a href="">Popular</a><a href="">Features</a><a href="">Recommend</a><a href="">Tour packages</a></div>
-    <div id="content"></div>
+    <br>
+    <!-- <div id="btn"><a id="btn1" href="">All</a><a id="btn2" href="">Trending</a><a id="btn3" href="">Popular</a><a id="btn4" href="">Features</a><a id="btn5" href="">Recommend</a><a id="btn6" href="">Tour packages</a></div> -->
+    <div id="filter">
+        <button id="btn1">All</button>
+        <button id="btn2">Trending</button>
+        <button id="btn3">Popular</button>
+        <button id="btn4">Features</button>
+        <button id="btn5">Recommend</button>
+        <button id="btn6">Tour packages</button>
+    </div>
+    <br>
+    <br>
+    <div id="content">
+    </div>
+    
+  <!-- <div id="pages" class="pagination">
+        <button id="prevPage">Previous</button>
+        <button id="nextPage">Next</button>
+      </div> -->
+      <div class="container">
+        <!-- <h1>Hotels</h1> -->
+        <!-- <ul class="hotel-list"></ul> -->
+        <div class="pagination">
+          <button id="prevPage">Previous</button>
+          <button id="nextPage">Next</button>
+        </div>
+      </div>
 </body>
 </html>
+<script src="./product.js"></script>
