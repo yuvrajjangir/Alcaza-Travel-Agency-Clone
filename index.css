@@ -1,4 +1,41 @@
 /* background image */
+body {
+  font-family: "Roboto", sans-serif;
+  margin-top: 0;
+  padding: 0;
+}
+/* navbar */
+nav {
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+}
+#main {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+#main a {
+  text-decoration: none;
+  color: white;
+}
+#main div:nth-child(1) {
+  width: 15%;
+}
+#main div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+#main div:nth-child(3) {
+  display: flex;
+  justify-content: space-between;
+  width: 10%;
+}
 .headers {
   position: relative;
 }
@@ -26,10 +63,10 @@ img {
 }
 
 .text > .sub > h1 {
-  font-family: "Gill Sans", sans-serif;
+  /* font-family: "Gill Sans", sans-serif; */
 
   font-weight: 400;
-  font-size: 102.4px;
+  font-size: 6vw;
   vertical-align: baseline;
   margin: 0;
   padding: 0;
@@ -39,21 +76,22 @@ img {
 }
 
 .sub-heading {
-  margin-top: 40px;
+  margin-top: 20px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
 .sub-heading > h4 {
-  font-family: Arial Helvetica sans-serif;
+  /* font-family: Arial Helvetica sans-serif; */
 
-  font-size: 22.4px;
+  font-size: 1.4vw;
   margin: 0;
-  padding: 0;
+  padding: 5px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  font-weight: 400;
   text-align: center;
 }
 
@@ -212,7 +250,7 @@ img {
 .aboutSecond > p {
   width: 90%;
   color: #3e8c87;
-  font-family: Arial Helvetica sans-serif;
+  /* font-family: Arial Helvetica sans-serif; */
   font-size: 18px;
   line-height: 24px;
   line-height: 1.2;
