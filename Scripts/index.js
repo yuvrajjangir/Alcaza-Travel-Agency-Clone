@@ -18,7 +18,7 @@ async function getData(url) {
     let data = await res.json();
     console.log(data);
     localStorage.setItem("productSearch", JSON.stringify(data));
-    // window.location=
+    window.location = "./searchResult.html";
   } catch (error) {
     console.log(error);
   }

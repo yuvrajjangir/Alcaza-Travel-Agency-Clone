@@ -1,0 +1,124 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+  background-color: #f7f7f7;
+}
+/* navbar */
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background-color: #1ca0e3;
+}
+#main {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  font-size: 1.2rem;
+}
+#logo img {
+  width: 100%;
+}
+#main a {
+  text-decoration: none;
+  color: white;
+}
+#main a:hover {
+  text-decoration: none;
+  color: rgb(158, 206, 250);
+}
+#main div:nth-child(1) {
+  width: 15%;
+}
+#main div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  max-width: max-content;
+  /* width: 55%; */
+}
+#main div:nth-child(3) {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  width: 15%;
+}
+#logo {
+  width: 14%;
+}
+/* card search result */
+#main_container {
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 65px;
+}
+#main_container h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+#card_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+}
+
+#card_container img {
+  width: 100%;
+}
+.card {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.name-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (width<=1000px) {
+  #card_container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #main {
+    font-size: 1rem;
+  }
+  #logo {
+    width: 12%;
+  }
+  #main_container h2 {
+    font-size: 2rem;
+  }
+}
+@media screen and (width<=750px) {
+  #card_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (width<=400px) {
+  #card_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.cardEmpty {
+  /* border: 1px solid red; */
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+.cardEmpty img {
+  width: 100%;
+}

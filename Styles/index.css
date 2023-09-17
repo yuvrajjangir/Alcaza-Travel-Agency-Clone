@@ -1,14 +1,15 @@
-/* background image */
 body {
+  padding: 0px;
+  margin: 0px;
   font-family: "Roboto", sans-serif;
-  margin-top: 0;
-  padding: 0;
+  /* background-color: #f7f7f7; */
 }
 /* navbar */
 nav {
   position: absolute;
   width: 100%;
   z-index: 1000;
+  /* background-color: #1ca0e3; */
 }
 #main {
   display: flex;
@@ -16,25 +17,38 @@ nav {
   margin: auto;
   justify-content: space-between;
   align-items: center;
-  padding: 5px;
+  padding: 8px;
+  font-size: 1.2rem;
 }
-
+#logo img {
+  width: 100%;
+}
 #main a {
   text-decoration: none;
   color: white;
+}
+#main a:hover {
+  text-decoration: none;
+  color: rgb(158, 206, 250);
 }
 #main div:nth-child(1) {
   width: 15%;
 }
 #main div:nth-child(2) {
   display: flex;
-  justify-content: space-between;
-  width: 50%;
+  justify-content: center;
+  gap: 15px;
+  max-width: max-content;
+  /* width: 55%; */
 }
 #main div:nth-child(3) {
   display: flex;
-  justify-content: space-between;
-  width: 10%;
+  justify-content: flex-end;
+  gap: 10px;
+  width: 15%;
+}
+#logo {
+  width: 14%;
 }
 /* navbar end */
 
@@ -255,6 +269,15 @@ nav {
     margin-left: auto;
   }
 }
+/* navbar media query */
+@media screen and (width<=1000px) {
+  #main {
+    font-size: 1rem;
+  }
+  #logo {
+    width: 12%;
+  }
+}
 
 @media (min-width: 900px) and (max-width: 1420px) {
   .search-bar {
@@ -354,11 +377,11 @@ nav {
 @media (min-width: 600px) and (max-width: 900px) {
   .search-bar {
     top: 60%;
-    left: 22%;
+    left: 11%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 50vw;
+    width: 70vw;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5vw;
@@ -456,11 +479,11 @@ nav {
 @media (min-width: 300px) and (max-width: 600px) {
   .search-bar {
     top: 60%;
-    left: 22%;
+    left: 11%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 85vw;
+    width: 70vw;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5vw;
@@ -483,7 +506,7 @@ nav {
   .input-section {
     display: flex;
     align-items: center;
-    gap: 5.5vw;
+    gap: 3px;
   }
 
   .divider {
@@ -557,7 +580,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 85vw;
+    width: 50vw;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5vw;
