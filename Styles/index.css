@@ -573,6 +573,90 @@ nav {
   }
 }
 
+/* --------------------------best ads --------------- */
+#bestAds {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+#bestAds h1 {
+  text-wrap: nowrap;
+  width: 60%;
+  text-align: center;
+  font-size: 2rem;
+}
+#bestAds div {
+  width: 18%;
+}
+#bestAds img {
+  width: 100%;
+}
+#satisfied {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 80%;
+  margin: auto;
+  gap: 15px;
+}
+.satisfiedCard {
+  /* border: 1px solid red; */
+  margin-bottom: 30px;
+}
+.satisfiedCard > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  padding-bottom: 18px;
+}
+.satisfiedCard > div > div:nth-child(1) {
+  width: 15%;
+  border-radius: 50%;
+}
+.satisfiedCard > div > div:nth-child(2) {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: space-between;
+}
+.satisfiedCard > div > div:nth-child(2) h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #494949;
+  margin: 0;
+}
+.satisfiedCard > div > div:nth-child(2) p {
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 400;
+  color: rgb(166, 166, 166);
+}
+.satisfiedCard > div > div:nth-child(3) {
+  width: 20%;
+  font-size: 1.4rem;
+  text-wrap: nowrap;
+  color: rgb(123, 122, 122);
+  /* border: 1px solid red; */
+}
+
+.satisfiedCard > div img {
+  width: 100%;
+  border-radius: 50%;
+  /* border: 1px solid red; */
+}
+.satisfiedCard > p {
+  padding: 0px 10px;
+  padding-top: 18px;
+  margin: 5px 0;
+  border-top: 1px solid rgb(203, 203, 203);
+  color: rgb(123, 122, 122);
+  line-height: 140%;
+}
 @media (max-width: 300px) {
   .search-bar {
     top: 60%;
