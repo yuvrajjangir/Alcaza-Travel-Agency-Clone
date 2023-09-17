@@ -12,19 +12,26 @@ function cool_fun(arr) {
     title.id = "title";
     let subtitle = document.createElement("div");
     subtitle.id = "subtitle";
-    
-    let p1 = document.createElement("p");
+    let p1 = document.createElement("h1");
     p1.innerText = ele.title;
     p1.id = "headline";
 
     let i1 = document.createElement("i");
     i1.className = "fa-solid fa-star";
     i1.id='starPrem'
-    let p2 = document.createElement("p");
-    
-    p2.textContent = "4.92 . 597 reviews " + ele.name;
+    let p2 = document.createElement("h3");
+    let aaa=document.createElement("a");
+    let pay_btn = document.createElement('button');
+    pay_btn.textContent = 'BOOK NOW';
+    pay_btn.classList = 'pg'
+    pay_btn.addEventListener('click',()=>{
+      navTobooking(ele);
+    })
+    aaa.append(pay_btn);
+    aaa.href="#"
+    p2.textContent = ele.cost+" ₹";
     subtitle.append(i1,p2);
-    title.append(p1,subtitle);
+    title.append(p1,p2,aaa);
     document.getElementById("title").append(title);
     
     // ==============================title=================================
@@ -56,6 +63,10 @@ function cool_fun(arr) {
     let info=document.createElement("div");
     let h3=document.createElement("h3")
     h3.textContent="! INFORMATION";
+    let cntry=document.createElement("pre");
+  cntry.textContent=`Country                 ${ele.Country}`
+  let gstdDetl=document.createElement("pre");
+  gstdDetl.textContent=`Guest Details           ${ele.guestDetail}`
     let h1=document.createElement("pre");
     h1.textContent=`Destination             ${ele.title}`;
     let h2=document.createElement("pre");
@@ -64,18 +75,16 @@ function cool_fun(arr) {
     h4.textContent=`Deaparture Time         approx 7:30AM`;
     let h5=document.createElement("pre");
     h5.textContent=`Deaparture Time         approx 9:30PM`;
-    
-    
-    
-    info.append(h3,h1,h2,h4,h5);
+    info.append(h3,cntry,gstdDetl,h1,h2,h4,h5);
     let h33=document.createElement("h3");
     h33.textContent="GALLERY"
+    h33.classList="h33";
     
     let p6 = document.createElement("p");
     p6.textContent = ele.description1.slice(0,1000);
     let abc=document.createElement("div");
     let left=document.createElement("div")
-    left.append(p6,info,h33,d4)
+    left.append(info,h33,d4)
     let img11=document.createElement("img");
     img11.src="https://www.shutterstock.com/shutterstock/photos/2006512574/display_1500/stock-vector-sale-banner-template-design-with-geometric-background-big-sale-special-offer-up-to-off-super-2006512574.jpg";
     img11.setAttribute("class","img11");
@@ -88,12 +97,7 @@ function cool_fun(arr) {
     abc.setAttribute("class","abc")
     document.getElementById("discription").append(abc);
     // ========================proceed to payment ===========================
-    let pay_btn = document.createElement('button');
-    pay_btn.textContent = 'BOOK NOW';
-    pay_btn.classList = 'pg'
-    pay_btn.addEventListener('click',()=>{
-      navTobooking(ele);
-    })
-    document.getElementById("payment").append(pay_btn);
+    
+    // document.getElementById("payment").append(pay_btn);
   });
 }

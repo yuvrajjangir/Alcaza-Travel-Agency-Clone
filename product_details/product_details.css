@@ -1,5 +1,6 @@
 body{
     background-color: rgb(233, 255, 255);
+    font-family: "Roboto",sans-serif;
 }
 pre{
     font-size: large;
@@ -12,19 +13,27 @@ pre{
 margin: 10px;
     
 }
+.h33{
+    margin-top: 60px;
+}
 .second{
+    margin-top: 15px;
 margin-left: 10px;
     display: grid;
     grid-template-columns: repeat(2,430px);
 }
 .imm{
     width: 100%;
+    height:600px;
+    /* height: auto; */
 }
 h3{
     margin-left: 80px;
 }
 .abc{
 display: flex;
+margin-top: 30px;
+margin-bottom: 50px;
 }
 
 .img11{
@@ -32,4 +41,102 @@ display: flex;
     height: 350px;
     margin-right: 10px;
     margin: 20px;
+    margin-left: 150px;
+
 }
+#title{
+    display: flex;
+    margin-top: -50px;
+    margin-left: 10px;
+    justify-content: space-between;
+}
+.pg{
+    margin-left: 80%;
+    background-color: rgb(87, 114, 247);
+    width: 150px;
+    height: 50px;
+    margin-top: 5px;
+    border-radius: 50px;
+    color: white;
+    font-size: larger;
+    font-weight: 500;
+}
+
+/* responsiveness */
+@media screen and (min-width:768px) and (max-width:1024px) {
+    #container {
+      width: 100%;
+      margin: auto;
+    }
+    #title i {
+      margin-right: 0%;
+    }
+    #title{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+      margin: auto;
+      padding: 10px 15px 10px 15px;
+    }
+    .abc{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 0%;
+    }
+    .img11{
+        width:600px;
+        margin-left: 10px;
+    }
+    .first{
+        /* width: 600px;
+         */
+        width: 1000px;
+        margin-left: 0%;
+    }
+    .second{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .pg{
+        margin-left: -10px;
+    }
+  }
+
+  /* small screen */
+  @media screen and (min-width:0px) and (max-width:767px) {
+    #container {
+      width: 100%;
+      margin: auto;
+    }
+    #title i {
+      margin-right: 0%;
+    }
+    #title{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+      margin: auto;
+      padding: 10px 15px 10px 15px;
+    }
+    .pg{
+        margin-left: 10%;
+        
+    }
+    .abc{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .img11{
+        width:400px;
+    }
+    .first{
+        /* width: 600px;
+         */
+        width: 500px;
+        margin-left: 15%;
+    }
+    .second{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+        margin-left: 20%;
+    }
+  }

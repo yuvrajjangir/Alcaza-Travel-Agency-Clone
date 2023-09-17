@@ -1,0 +1,1 @@
+GET https://api-wvaq.onrender.com/hotels?_page=1&_limit=2
