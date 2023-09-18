@@ -36,8 +36,8 @@ async function Data(url){
   try{
     let res=await fetch (url);
     let data=await res.json();
-    console.log(data);
-    updateDisplay(data);
+  
+    updateDisplay(array);
   }
   catch(error){
     console.log(error);
@@ -109,6 +109,8 @@ function updateDisplay(arr) {
 
 }
 
-
+var getStarted=document.querySelector(".get-started-button").addEventListener("click",function(){
+    window.location.href="index.html";
+})
 
 Data(`${baseUrl}`);
