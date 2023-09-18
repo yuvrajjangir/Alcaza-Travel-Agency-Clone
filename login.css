@@ -32,7 +32,12 @@
 #bottom {
     display: flex;
 }
-
+#maxty {
+    margin-right: 80rem;
+    margin-bottom: 45rem;
+    width: 10%;
+    cursor: pointer;
+}
 #leftdiv {
     position: relative;
     width: 50%;
@@ -56,7 +61,6 @@
     margin-top: 2%;
     margin-left: 2%;
     position: relative;
-    cursor: pointer;
 }
 #head {
     position: relative;
@@ -253,3 +257,29 @@ a {
         font-size: 0px;
        }
    }
+
+
+   
+   #popup {
+    display: none;
+    position: fixed;
+    top: 0; /* Place the popup at the top */
+    left: 0;
+    right: 0;
+    padding: 10px;
+    text-align: center;
+    z-index: 999; /* Ensure it's on top of other content */
+    margin-top: 25px;
+  }
+  
+  #popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 12px;
+  }
