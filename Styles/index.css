@@ -613,6 +613,18 @@ nav {
   padding: 5px 10px;
   padding-bottom: 18px;
 }
+
+#icon {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  width: 6%;
+  font-size: 13px;
+  margin-right: 20px;
+}
+#icon > img {
+  width: 100%;
+}
 .satisfiedCard > div > div:nth-child(1) {
   width: 15%;
   border-radius: 50%;
@@ -625,24 +637,25 @@ nav {
   justify-content: space-between;
 }
 .satisfiedCard > div > div:nth-child(2) h3 {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-weight: 500;
-  color: #494949;
+  color: rgb(0, 0, 0);
   margin: 0;
 }
 .satisfiedCard > div > div:nth-child(2) p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin: 0;
+  margin-top: 5px;
   font-weight: 400;
-  color: rgb(166, 166, 166);
+  color: rgb(132, 148, 179);
 }
-.satisfiedCard > div > div:nth-child(3) {
+/* .satisfiedCard > div > div:nth-child(3) {
   width: 20%;
   font-size: 1.4rem;
   text-wrap: nowrap;
   color: rgb(123, 122, 122);
-  /* border: 1px solid red; */
-}
+  border: 1px solid red;
+} */
 
 .satisfiedCard > div img {
   width: 100%;
@@ -653,9 +666,11 @@ nav {
   padding: 0px 10px;
   padding-top: 18px;
   margin: 5px 0;
+  font-size: 14px;
   border-top: 1px solid rgb(203, 203, 203);
-  color: rgb(123, 122, 122);
+  color: rgb(132, 148, 179);
   line-height: 140%;
+  /* border: 1px solid red; */
 }
 @media (max-width: 300px) {
   .search-bar {
@@ -860,7 +875,7 @@ img {
 }
 .aboutSecond > p {
   width: 90%;
-  color: #3e8c87;
+  color: rgb(132, 148, 179);
   /* font-family: Arial Helvetica sans-serif; */
   font-size: 18px;
   line-height: 24px;
@@ -885,4 +900,14 @@ img {
   background-color: #3e8c87;
   color: white;
   cursor: pointer;
+}
+
+/* googleplat store page */
+#googlePlay {
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+}
+#googlePlay > img {
+  width: 100%;
 }
