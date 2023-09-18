@@ -1,4 +1,5 @@
 let productSearch = JSON.parse(localStorage.getItem("productSearch"));
+
 let card_container = document.querySelector("#card_container");
 let main_container = document.querySelector("#main_container");
 
@@ -39,6 +40,11 @@ function updateDome(arr) {
 
     let desc = document.createElement("p");
     desc.innerText = ele.description;
+
+    card.addEventListener("click", function () {
+      localStorage.setItem("ID", JSON.stringify(ele));
+      window.location.href = "/product_details.html";
+    });
 
     imgCard.append(img);
     namePrice.append(name, price);

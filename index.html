@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
 
+    <link rel="stylesheet" href="./Styles/product.css" />
     <link rel="stylesheet" href="./Styles/index.css" />
-    <link rel="stylesheet" href="../styles/footer.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -89,6 +90,41 @@
       </div>
     </div>
 
+    <div id="product_page">
+      <h1>Guide for your next vacation</h1>
+      <p>
+        Check out this week's selection of popular that might catch your eye.
+        and don't.
+      </p>
+      <br />
+      <br />
+      <!-- <div id="btn"><a id="btn1" href="">All</a><a id="btn2" href="">Trending</a><a id="btn3" href="">Popular</a><a id="btn4" href="">Features</a><a id="btn5" href="">Recommend</a><a id="btn6" href="">Tour packages</a></div> -->
+      <div id="filter">
+        <button id="btn1">All</button>
+        <button id="btn2">Trending</button>
+        <button id="btn3">Popular</button>
+        <button id="btn4">Features</button>
+        <button id="btn5">Recommend</button>
+        <button id="btn6">Tour packages</button>
+      </div>
+      <br />
+      <br />
+      <div id="content"></div>
+
+      <!-- <div id="pages" class="pagination">
+        <button id="prevPage">Previous</button>
+        <button id="nextPage">Next</button>
+      </div> -->
+      <div class="container">
+        <!-- <h1>Hotels</h1> -->
+        <!-- <ul class="hotel-list"></ul> -->
+        <div class="pagination">
+          <button id="prevPage">Previous</button>
+          <button id="nextPage">Next</button>
+        </div>
+      </div>
+    </div>
+
     <div class="aboutSection">
       <div class="aboutbox">
         <div class="aboutfirst">
@@ -102,7 +138,7 @@
             on category. Just a few clicks away from starting your journey! When
             you want to make a purchase from Saved.
           </p>
-          <button>Read More</button>
+          <button class="btn_homepage">Read More</button>
         </div>
       </div>
 
@@ -115,7 +151,7 @@
             several ways to copy text from any protected website, even if you
             can't right-click the will text from a website.
           </p>
-          <button>Find It Here</button>
+          <button class="btn_homepage">Find It Here</button>
         </div>
         <div class="aboutfirst">
           <img src="https://alcazar.vercel.app/photo2.png" ; alt="" />
@@ -133,7 +169,7 @@
             impossible, there are several ways to copy text from any protected
             website, even if you can't right-click the page.
           </p>
-          <button>Check It Out</button>
+          <button class="btn_homepage">Check It Out</button>
         </div>
       </div>
       <div class="aboutbox">
@@ -145,7 +181,7 @@
             are several ways to copy text from any protected website, even if
             you can't right-click the page.right-clicking content?
           </p>
-          <button>Read More</button>
+          <button class="btn_homepage">Read More</button>
         </div>
         <div class="aboutfirst">
           <img src="https://alcazar.vercel.app/photo4.png" alt="" />
@@ -163,7 +199,7 @@
             several ways to copy text from any protected website, even if you
             can't right-click the page. seem impossible
           </p>
-          <button>Read More</button>
+          <button class="btn_homepage">Read More</button>
         </div>
       </div>
     </div>
@@ -306,7 +342,56 @@
       <img src="https://alcazar.vercel.app/photo6.png" alt="" />
     </div>
 
-    <footer></footer>
+    <footer data-aos="fade-up" data-aos-duration="1000" data-aos-once="false">
+      <div
+        class="top"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-once="false"
+      >
+        <div class="logo">
+          <div><img src="https://alcazar.vercel.app/icon.png" alt="" /></div>
+          <div>
+            <p>
+              Convenience is our prority to satisfy our customers, and we
+              provide all the features you can easily and quickly.
+            </p>
+          </div>
+        </div>
+        <div class="about">
+          <div>
+            <h2>About</h2>
+            <ul>
+              <li>How to Book</li>
+              <li>Contact Us</li>
+              <li>Help Center</li>
+            </ul>
+          </div>
+          <div>
+            <h2>Products</h2>
+            <ul>
+              <li>destination</li>
+              <li>Flight</li>
+              <li>Lodging</li>
+            </ul>
+          </div>
+          <div>
+            <h2>Social</h2>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="bottom">
+        <div>Privacy Policy</div>
+        <div>Copyright © 2023 Alcazar</div>
+      </div>
+    </footer>
   </body>
-  <script src="./Scripts/index.js"></script>
 </html>
+<script src="./Scripts/product.js"></script>
+<script src="./Scripts/index.js"></script>
