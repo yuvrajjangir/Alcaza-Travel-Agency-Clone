@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alcazar-Travel around the world</title>
+      <link rel="icon" href="https://th.bing.com/th/id/OIP.YLDN38jp9y3NHssAXQVx4gHaHa?pid=ImgDet&rs=1">
+    <script src="https://kit.fontawesome.com/9d25914ace.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div id="popup">
+        <div id="popup-content">
+          <span id="popup-text"></span>
+        </div>
+      </div>
+      
+    <div class="container">
+        <div id=""><img id="maxty" src="https://alcazar.vercel.app/icon.png" alt=""></div>
+        <div class="backimage">
+            <div id="heading">
+                <div id="logo"><img src="https://alcazar.vercel.app/icon.png" alt="" id="logo-image"></div>
+                <div id="head">Log In</div>
+                <div id="link">
+                   <a href="HOMEPAGE.HTML"><div><i class="fa fa-home"></i>
+                        <p>Home</p>
+                    </div></a>
+                </div>
+            </div>
+            <div id="bottom">
+                <div id="leftdiv">
+                    <div id="description">
+                        <p style="--delay:0s;">Too much fun for just one trip.</p><br>
+                        <p style="--delay:1s;">Oh my dear, there is a beautiful place waiting for you.</p><br>
+                        <p style="--delay:2s;">Unforgettable moments await you.</p><br>
+                        <p style="--delay:3s;">Running life needs a break.</p><br>
+                        <p style="--delay:4s;">Invest time in peace,try something new.</p><br>
+                        <p style="--delay:5s;">See the world through a different lens.</p><br>
+                        <p style="--delay:6s;">The new day calls for us to go far.</p><br>
+                        <p style="--delay:7s;">Spend some time with nature.</p><br>
+                    </div>
+                </div>
+                <div id="rightdiv">
+                    <form>
+                        <div class="formbox">
+                            <i class="fa fa-envelope"></i>
+                            <input type="email" id="email"  placeholder="Enter your Email">
+                        </div>
+                        <div class="formbox">
+                            <i class="fa fa-lock"></i>
+                            <input type="password" id="password"  placeholder="Enter your password">
+                        </div>
+                        <div id="error-message" ></div>
+                            <button id="done">Log In</button>
+                            <p>Don't have an account <a style="text-decoration: none;" href="signup.html">Register Here!</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
+<!-- <script src="login.js"></script> -->
+<script type="module">
+  
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+   
+  import { getAuth, signInWithEmailAndPassword  } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js";
+
+
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyDKy1OK4bjiF4gyLjeDLyQ-AmhM4__JMkc",
+      authDomain: "alcazar-4c5a1.firebaseapp.com",
+      projectId: "alcazar-4c5a1",
+      storageBucket: "alcazar-4c5a1.appspot.com",
+      messagingSenderId: "57547208051",
+      appId: "1:57547208051:web:ad968ae3dc83a496848106"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+
+    console.log(app);
+
+    
+    const auth = getAuth();
+    document.querySelector("#done").addEventListener("click",function(e){
+        e.preventDefault();
+
+        let email = document.getElementById("email").value;
+        let password = document.getElementById("password").value;
+
+        signInWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        // Signed in 
+        const user = userCredential.user;
+        // ...
+        console.log(user)
+        window.location.href = "HOMEPAGE.HTML";
+
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+
+        document.querySelector("#error-message").innerHTML=error.message;
+      });
+    })
+
+
+
+    </script>
+ 
+
+
