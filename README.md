@@ -48,25 +48,28 @@ This entire journey of making the project was awesome. We have learned lots of t
 
 - ## <span style="color:blue"> Home Page </span>
 
-<img width="377" alt="Home page" src="![Screenshot 2023-09-19 172554](https://github.com/yuvrajjangir/devilish-drop-2377/assets/104549239/a244b038-ab2c-41a5-8272-569038328826)">
+<img width="377" alt="Home page" src="https://github-production-user-asset-6210df.s3.amazonaws.com/104549239/268950955-a244b038-ab2c-41a5-8272-569038328826.png">
 
 
 
 - ## <span style="color:blue"> Product Pages</span>
 
-<img width="400" alt="zms 1" src="">
-<img width="400" alt="zms 1" src="">
-<img width="400" alt="zms 1" src="">
+<img width="400" alt="zms 1" src="https://github-production-user-asset-6210df.s3.amazonaws.com/104549239/268952871-f0b52f76-d5fb-4002-8918-529cd5cf3a21.png">
+<img width="400" alt="zms 1" src="https://github.com/yuvrajjangir/devilish-drop-2377/assets/104549239/608b4e6f-3dae-4a3e-9abf-ab15af3ea9f0">
 
 
 - ## <span style="color:blue"> Payment Page</span>
 
- <img width="391" alt="zms footer" src="">
- 
+ <img width="391" alt="zms footer" src="https://github.com/yuvrajjangir/devilish-drop-2377/assets/104549239/6cae33b3-9f74-49f0-97ac-c9dd5d057d66">
+ <img width="391" alt="zms footer" src="https://github.com/yuvrajjangir/devilish-drop-2377/assets/104549239/2b6fba09-4408-4135-a1f8-a1ca3df86b88">
+
+  - ## <span style="color:blue"> Signup Page</span>
+
+ <img width="391" alt="zms footer" src="https://github.com/yuvrajjangir/devilish-drop-2377/assets/104549239/a244b038-ab2c-41a5-8272-569038328826">
 
  - ## <span style="color:blue"> Login Page</span>
 
- <img width="391" alt="zms footer" src="">
+ <img width="391" alt="zms footer" src="https://github.com/yuvrajjangir/devilish-drop-2377/assets/104549239/4f59e477-8e59-4df0-a8b0-42239b91c902">
  
 <br>
  <hr>
@@ -96,8 +99,11 @@ We are very thankful for the support of my teammates and instructor for the comp
 - ## Yuvraj Jangir
 [GitHub](https://github.com/yuvrajjangir)
 
-- ## Surendra Singh
-[GitHub](https://github.com/SursaChauhan)
+- ## Vivek Yadav
+[GitHub](https://github.com/105vivek)
+
+- ## Abhishek
+[GitHub](https://github.com/Abhishek000000000000000000)
 
 
 
