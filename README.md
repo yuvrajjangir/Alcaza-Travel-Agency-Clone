@@ -15,6 +15,10 @@ product.html
 ![Screenshot 2023-09-19 173051](https://github.com/yuvrajjangir/devilish-drop-2377/assets/104549239/f0b52f76-d5fb-4002-8918-529cd5cf3a21)
 productDetails.html
 ![Screenshot 2023-09-19 173140](https://github.com/yuvrajjangir/devilish-drop-2377/assets/104549239/608b4e6f-3dae-4a3e-9abf-ab15af3ea9f0)
+payment.html
+![Screenshot 2023-09-19 173153](https://github.com/yuvrajjangir/devilish-drop-2377/assets/104549239/6cae33b3-9f74-49f0-97ac-c9dd5d057d66)
+![Screenshot 2023-09-19 173215](https://github.com/yuvrajjangir/devilish-drop-2377/assets/104549239/2b6fba09-4408-4135-a1f8-a1ca3df86b88)
+
 
 
 
