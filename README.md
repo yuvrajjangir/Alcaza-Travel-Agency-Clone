@@ -11,4 +11,7 @@ signup.html
 ![Screenshot 2023-09-19 173034](https://github.com/yuvrajjangir/devilish-drop-2377/assets/104549239/4f59e477-8e59-4df0-a8b0-42239b91c902)
 login.html
 ![Screenshot 2023-09-19 172920](https://github.com/yuvrajjangir/devilish-drop-2377/assets/104549239/91223b70-91ac-45cf-8c87-c94d3d9e132e)
+product.html
+![Screenshot 2023-09-19 173051](https://github.com/yuvrajjangir/devilish-drop-2377/assets/104549239/f0b52f76-d5fb-4002-8918-529cd5cf3a21)
+
 
